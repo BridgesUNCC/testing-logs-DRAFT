@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Sat Sep 28 09:12:12 AM EDT 2024</p>
+	<p>Running at Sat Sep 28 01:11:21 PM EDT 2024</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -84,11 +84,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarycancer_snippet.py" class="failure">
+  <div id="summarycancer_snippet.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogcancer_snippet.py">Test cancer_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogcancer_snippet.py-runtest">error</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogcancer_snippet.py-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -172,11 +172,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarygame_snippet.py" class="failure">
+  <div id="summarygame_snippet.py" class="success">
     <h2><a href="python_testing_logs.html#pythonloggame_snippet.py">Test game_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_snippet.py-runtest">error</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_snippet.py-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1051,7 +1051,7 @@ http://bridges-cs.herokuapp.com/assignments/3008/bridges_testing
     <div id="pythonlogcancer_snippet.py" class="logdetails">
       <h2>Test cancer_snippet.py full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="pythonlogcancer_snippet.py-runtest">Run Test for test cancer_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1081,33 +1081,15 @@ http://bridges-cs.herokuapp.com/assignments/3008/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Traceback (most recent call last):
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
-    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/cancer_snippet.py&quot;, line 37, in &lt;module&gt;
-    main()
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/cancer_snippet.py&quot;, line 17, in main
-    my_list = get_cancer_incident_data()
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 516, in get_cancer_incident_data
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-could not run test cancer_snippet.py
+Record 1:
+	Type: Mortality
+	Year: 2000
+	Population: 2302835
+	Race: All Races
+	Gender: 
+	CrudeRate: 192.2(more rate information available) 
+	Location: 32.799, -86.8073
+	Count: 0
 </code></pre>
 </div>
     
@@ -1319,7 +1301,7 @@ http://bridges-cs.herokuapp.com/assignments/3013/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x731aa2451760&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7ff24d8f7e30&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1461,10 +1443,10 @@ First 10 elevations:
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Magnitude: 5.1
-Date: 2024-09-28 12:32:38
-Location:Volcano Islands, Japan region
-Lat/Long:25.8313,141.6942
+Magnitude: 1.97
+Date: 2024-09-28 17:04:42
+Location:14 km S of Fern Forest, Hawaii
+Lat/Long:19.3369998931885,-155.144332885742
 </code></pre>
 </div>
     
@@ -1563,7 +1545,7 @@ http://bridges-cs.herokuapp.com/assignments/3018/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7fce38205670&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7e54f07d4470&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1580,7 +1562,7 @@ disconnected
     <div id="pythonloggame_snippet.py" class="logdetails">
       <h2>Test game_snippet.py full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1610,33 +1592,10 @@ disconnected
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Traceback (most recent call last):
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
-    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_snippet.py&quot;, line 30, in &lt;module&gt;
-    main()
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_snippet.py&quot;, line 17, in main
-    my_list = get_game_data()
-              ^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 94, in get_game_data
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-could not run test game_snippet.py
+Classic British Motor Racing
+Wii
+2.1
+['Racing']
 </code></pre>
 </div>
     
@@ -1999,8 +1958,8 @@ C
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Clark_Gable
-Saratoga_(1937)
+Charles_Grodin_(I)
+20000_Leagues_Under_the_Sea_(1954)
 </code></pre>
 </div>
     
@@ -2038,7 +1997,7 @@ Saratoga_(1937)
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7532efff7f50&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7030d3ed9d30&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2191,7 +2150,7 @@ http://bridges-cs.herokuapp.com/assignments/3030/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7dd946b13b30&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x739f0e8fb800&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2486,21 +2445,21 @@ Cartesian Coordinate of first vertex: 827.1273231300758, -5144.073405550668
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: Kentucky governor bans use of ‘conversion therapy’ with executive order
-Author: plz-let-me-in
-Score: 49065
-Comment Count: 887
+Title: Billie Jean King to become first solo female athlete to receive Congressional Gold Medal
+Author: WhileFalseRepeat
+Score: 1543
+Comment Count: 36
 Subreddit: news
-Title: The FBI is investigating suspicious packages sent to election officials in more than a dozen states
-Title: Tupperware files for bankruptcy after almost 80 years of business.
-Title: 2-year-old who walked out of her family home after bedtime killed in car accident
 Title: John Grisham on death row prisoner: ‘Texas is about to execute innocent man’
-Title: This bank says ‘millions’ of people could be targeted by AI voice-cloning scams
 Title: Ex-officer testifies he beat a ‘helpless’ Tyre Nichols then lied about it
 Title: Hezbollah hand-held radios detonate across Lebanon, sources say
 Title: Justice Department seeks $100 million from two companies that owned ship that destroyed Baltimore bridge
-Title: Portugal declares a state of calamity as wildfires rage out of control
-Title: Devices used in Lebanon detonations were never in Hungary, government says
+Title: Kentucky governor bans use of ‘conversion therapy’ with executive order
+Title: Federal Reserve cuts key rate by sizable half-point, signaling end to its inflation fight
+Title: Sean 'Diddy' Combs back in court to request bail, complains of 'horrific' New York City jail conditions
+Title: Harvey Weinstein pleads not guilty to additional sex crimes charge ahead of retrial
+Title: Sean “Diddy” Combs denied bail again in federal sex trafficking case in New York
+Title: Body found near I-75 mass shooting area
 =====
 Available subreddits:
 gadgets
@@ -2551,21 +2510,9 @@ UpliftingNews
 InternetIsBeautiful
 science
 =====
-Title: Why are unheated structures warmer than the ambient temperature (in the winter)?
-Author: rampagingbeaver
-Score: 34
-Vote Ratio: 0.83
-Comment Count: 24
-Subreddit: askscience
-PostTime: 1705038860
-URL: https://www.reddit.com/r/askscience/comments/194nrvw/why_are_unheated_structures_warmer_than_the/
-Text: So, I live in Alberta. It's supposed to get close to -40° tonight. My detached garage, which is unheated and uninsulated is warmer than the ambient temperature by several degrees. 
-
-Does anyone know how to explain why this happens?
-
 Title: How do allergy shots shift the body’s reaction from an IgE mediated immunity to an IgG? What is unique about the allergy shots that prompts this response ? Why can’t normal exposure do the same?
 Author: AstralWolfer
-Score: 35
+Score: 39
 Vote Ratio: 0.95
 Comment Count: 3
 Subreddit: askscience
@@ -2575,7 +2522,7 @@ Text:
 
 Title: Why despite the lengthy period since the discovery of tuberculosis, is there only one vaccine (BCG) that is deemed ineffective?
 Author: nihilist_brat
-Score: 270
+Score: 275
 Vote Ratio: 0.87
 Comment Count: 49
 Subreddit: askscience
@@ -2584,6 +2531,16 @@ URL: https://www.reddit.com/r/askscience/comments/194ojcr/why_despite_the_length
 Text: So many vaccines could be developed for covid in such a short span of time. So what is with TB?
 Is vaccination not important part of TB elimination?
 Are there any difficulties in making  effective TB vaccine?
+
+Title: Do antimicrobial surfaces contribute to antibiotic resistance over time?
+Author: jescak
+Score: 28
+Vote Ratio: 0.81
+Comment Count: 12
+Subreddit: askscience
+PostTime: 1705045295
+URL: https://www.reddit.com/r/askscience/comments/194pimh/do_antimicrobial_surfaces_contribute_to/
+Text: I’ve been seeing things like phone cases and lunch boxes advertising antimicrobial properties and I’m wondering if products like these pose any threat to the individual or contribute to the antibiotic resistance problem in general.
 
 </code></pre>
 </div>
@@ -2622,21 +2579,9 @@ Are there any difficulties in making  effective TB vaccine?
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: Why are unheated structures warmer than the ambient temperature (in the winter)?
-Author: rampagingbeaver
-Score: 34
-Vote Ratio: 0.83
-Comment Count: 24
-Subreddit: askscience
-PostTime: 1705038860
-URL: https://www.reddit.com/r/askscience/comments/194nrvw/why_are_unheated_structures_warmer_than_the/
-Text: So, I live in Alberta. It's supposed to get close to -40° tonight. My detached garage, which is unheated and uninsulated is warmer than the ambient temperature by several degrees. 
-
-Does anyone know how to explain why this happens?
-
 Title: How do allergy shots shift the body’s reaction from an IgE mediated immunity to an IgG? What is unique about the allergy shots that prompts this response ? Why can’t normal exposure do the same?
 Author: AstralWolfer
-Score: 35
+Score: 39
 Vote Ratio: 0.95
 Comment Count: 3
 Subreddit: askscience
@@ -2646,7 +2591,7 @@ Text:
 
 Title: Why despite the lengthy period since the discovery of tuberculosis, is there only one vaccine (BCG) that is deemed ineffective?
 Author: nihilist_brat
-Score: 270
+Score: 275
 Vote Ratio: 0.87
 Comment Count: 49
 Subreddit: askscience
@@ -2655,6 +2600,16 @@ URL: https://www.reddit.com/r/askscience/comments/194ojcr/why_despite_the_length
 Text: So many vaccines could be developed for covid in such a short span of time. So what is with TB?
 Is vaccination not important part of TB elimination?
 Are there any difficulties in making  effective TB vaccine?
+
+Title: Do antimicrobial surfaces contribute to antibiotic resistance over time?
+Author: jescak
+Score: 28
+Vote Ratio: 0.81
+Comment Count: 12
+Subreddit: askscience
+PostTime: 1705045295
+URL: https://www.reddit.com/r/askscience/comments/194pimh/do_antimicrobial_surfaces_contribute_to/
+Text: I’ve been seeing things like phone cases and lunch boxes advertising antimicrobial properties and I’m wondering if products like these pose any threat to the individual or contribute to the antibiotic resistance problem in general.
 
 </code></pre>
 </div>
@@ -2693,11 +2648,17 @@ Are there any difficulties in making  effective TB vaccine?
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Sonnet 61
-poem
-Is it thy will, thy image should keep open
- My heavy eyelids to the weary night?
- Dost thou desire m
+The Second Part Of King Henry The Fourth
+play
+1598
+
+SECOND PART OF KING HENRY IV
+
+by William Shakespeare
+
+Dramatis Personae
+
+ RUMOUR, the Presente
 </code></pre>
 </div>
     
@@ -4406,16 +4367,16 @@ Data Records in 1955: 4617
 First 3 records:
 
 0)Actor-Movie Data:
-	Movie: Q237116, Marty
-	Actor: Q3058981, Esther Minciotti
+	Movie: Q331017, To Catch a Thief
+	Actor: Q3925, Grace Kelly
 
 1)Actor-Movie Data:
-	Movie: Q237116, Marty
-	Actor: Q3182090, John Milford
+	Movie: Q331017, To Catch a Thief
+	Actor: Q7374, Alfred Hitchcock
 
 2)Actor-Movie Data:
-	Movie: Q237116, Marty
-	Actor: Q3193130, Karen Steele
+	Movie: Q331017, To Catch a Thief
+	Actor: Q83410, Cary Grant
 
 </code></pre>
 </div>
