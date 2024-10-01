@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Oct  1 01:27:03 AM EDT 2024</p>
+	<p>Running at Tue Oct  1 05:26:37 AM EDT 2024</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -1885,7 +1885,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.726033494651374E12
+Data Access Took: 1.726047870377484E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -3112,17 +3112,12 @@ http://bridges-cs.herokuapp.com/assignments/64/bridges_testing
 <h3 id="javalog65-runanswer">Run Answer for Assignment 65</h3>
 <pre><code>Guessing reddit.java is the right java file where main is
 
-Exception in thread &quot;main&quot; org.apache.http.ConnectionClosedException: Premature end of Content-Length delimited message body (expected: 227773; received: 70969
-	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:180)
-	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:281)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:324)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:189)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
-	at java.base/java.io.Reader.read(Reader.java:250)
-	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:244)
-	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:288)
-	at bridges.connect.DataSource.requestJSON(DataSource.java:1219)
+Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: Http Request Failed. Error Code:500. Message:&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;500 Internal Server Error&lt;/title&gt;
+&lt;h1&gt;Internal Server Error&lt;/h1&gt;
+&lt;p&gt;The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.&lt;/p&gt;
+
+	at bridges.connect.DataSource.requestJSON(DataSource.java:1228)
 	at bridges.connect.DataSource.getRedditData(DataSource.java:1488)
 	at bridges.connect.DataSource.getRedditData(DataSource.java:1463)
 	at reddit.generateLinePlot(reddit.java:32)
@@ -3290,7 +3285,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.1404
+Pi val: 3.13188
 
 Check Your Visualization at the following link:
 
