@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Mon Sep 30 09:11:21 PM EDT 2024</p>
+	<p>Running at Tue Oct  1 01:11:31 AM EDT 2024</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -140,11 +140,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryelevation_snippet.py" class="success">
+  <div id="summaryelevation_snippet.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogelevation_snippet.py">Test elevation_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogelevation_snippet.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogelevation_snippet.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -220,11 +220,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarygutenberg_snippet.py" class="success">
+  <div id="summarygutenberg_snippet.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonloggutenberg_snippet.py">Test gutenberg_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloggutenberg_snippet.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloggutenberg_snippet.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -308,19 +308,19 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryreddit.py" class="success">
+  <div id="summaryreddit.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogreddit.py">Test reddit.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogreddit.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogreddit.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
-  <div id="summaryreddit_snippet.py" class="success">
+  <div id="summaryreddit_snippet.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogreddit_snippet.py">Test reddit_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogreddit_snippet.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogreddit_snippet.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1301,7 +1301,7 @@ http://bridges-cs.herokuapp.com/assignments/3013/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d68f5f1bc50&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x704a499e4c20&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1361,7 +1361,7 @@ http://bridges-cs.herokuapp.com/assignments/3015/bridges_testing
     <div id="pythonlogelevation_snippet.py" class="logdetails">
       <h2>Test elevation_snippet.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogelevation_snippet.py-runtest">Run Test for test elevation_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1391,21 +1391,18 @@ http://bridges-cs.herokuapp.com/assignments/3015/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Width: 65
-Height: 89
-Coordinate of lower left corner: -98.0259, 41.030154615385
-Spatial resolution: 0.016624615385
-First 10 elevations:
-504
-504
-500
-502
-501
-497
-491
-488
-497
-510
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/elevation_snippet.py&quot;, line 31, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/elevation_snippet.py&quot;, line 17, in main
+    ele_obj = data_source.get_elevation_data([41.03133177632377, -98.02593749997456, 42.508577297430456, -96.94531249997696])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 997, in get_elevation_data
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 952, in _server_request
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://bridges-data-server-elevation.bridgesuncc.org/elevation?minLat=41.03133177632377&amp;minLon=-98.02593749997456&amp;maxLat=42.508577297430456&amp;maxLon=-96.94531249997696&amp;resX=0.0166&amp;resY=0.0166
+could not run test elevation_snippet.py
 </code></pre>
 </div>
     
@@ -1443,10 +1440,10 @@ First 10 elevations:
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Magnitude: 1.37
-Date: 2024-10-01 00:57:19
-Location:20 km ESE of Little Lake, CA
-Lat/Long:35.894165,-117.6884995
+Magnitude: 2.25
+Date: 2024-10-01 04:41:42
+Location:10 km E of Pāhala, Hawaii
+Lat/Long:19.2028331756592,-155.377334594727
 </code></pre>
 </div>
     
@@ -1545,7 +1542,7 @@ http://bridges-cs.herokuapp.com/assignments/3018/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x700ab9b956d0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7fcd8a5ffb30&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1592,10 +1589,10 @@ disconnected
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Dokapon Journey
-Nintendo DS
-6.5
-['RPG']
+Samurai Shodown II
+NeoGeo
+8.5
+['Fighting']
 </code></pre>
 </div>
     
@@ -1826,7 +1823,7 @@ http://bridges-cs.herokuapp.com/assignments/3025/bridges_testing
     <div id="pythonloggutenberg_snippet.py" class="logdetails">
       <h2>Test gutenberg_snippet.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonloggutenberg_snippet.py-runtest">Run Test for test gutenberg_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1887,40 +1884,25 @@ The Complete Works of William Shakespeare
 
 Get text of Moby Dick (id: 2701)
 
+500 Server Error: INTERNAL SERVER ERROR for url: http://bridges-data-server-gutenberg.bridgesuncc.org/book?id=2701
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 1249, in gutenberg_book_text
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 952, in _server_request
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://bridges-data-server-gutenberg.bridgesuncc.org/book?id=2701
 
-Printing the first 300  characters..
+During handling of the above exception, another exception occurred:
 
-
-
-MOBY-DICK;
-
-or, THE WHALE.
-
-By Herman Melville
-
-
-
-CONTENTS
-
-ETYMOLOGY.
-
-EXTRACTS (Supplied by a Sub-Sub-Librarian).
-
-CHAPTER 1. Loomings.
-
-CHAPTER 2. The Carpet-Bag.
-
-CHAPTER 3. The Spouter-Inn.
-
-CHAPTER 4. The Counterpane.
-
-CHAPTER 5. Breakfast.
-
-CHAPTER 6. The Street.
-
-CHAPTER 7. The Chapel.
-
-C
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/gutenberg_snippet.py&quot;, line 61, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/gutenberg_snippet.py&quot;, line 52, in main
+    text = data_source.gutenberg_book_text(2701)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 1254, in gutenberg_book_text
+RuntimeError: 500 Server Error: INTERNAL SERVER ERROR for url: http://bridges-data-server-gutenberg.bridgesuncc.org/book?id=2701
+could not run test gutenberg_snippet.py
 </code></pre>
 </div>
     
@@ -1958,8 +1940,8 @@ C
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Bill_Murray_(I)
-Razor's_Edge,_The_(1984)
+Alec_Guinness
+Hitler:_The_Last_Ten_Days_(1973)
 </code></pre>
 </div>
     
@@ -1997,7 +1979,7 @@ Razor's_Edge,_The_(1984)
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x733e1bd40a70&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x79a6a50495e0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2150,7 +2132,7 @@ http://bridges-cs.herokuapp.com/assignments/3030/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d68d78abcb0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7bffef28fb60&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2310,14 +2292,10 @@ http://bridges-cs.herokuapp.com/assignments/3033/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Number of Vertices [Charlotte]: 11085
-Number of Edges [Charlotte]: 17582
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/3034/bridges_testing
-
-
+Error: Corrupted JSON download...
+Attempting redownload...
+Error: Redownload attempt failed
+Expecting value: line 1 column 1 (char 0)
 </code></pre>
 </div>
     
@@ -2404,10 +2382,10 @@ Amenity 4:  Lat=35.2518095 Long=-80.7653476 Name=Briarwood Elementary School Id=
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Number of Vertices [Charlotte]: 11085
-Number of Edges [Charlotte]: 17582
-Position of first vertex: lat=35.224978 long=-80.865467
-Cartesian Coordinate of first vertex: 827.1273231300758, -5144.073405550668
+Error: Corrupted JSON download...
+Attempting redownload...
+Error: Redownload attempt failed
+Expecting value: line 1 column 1 (char 0)
 </code></pre>
 </div>
     
@@ -2415,7 +2393,7 @@ Cartesian Coordinate of first vertex: 827.1273231300758, -5144.073405550668
     <div id="pythonlogreddit.py" class="logdetails">
       <h2>Test reddit.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogreddit.py-runtest">Run Test for test reddit.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -2510,40 +2488,60 @@ UpliftingNews
 InternetIsBeautiful
 science
 =====
-Title: The coldest recorded temperature on Earth was −89.2°C in Antarctica. CO2 freezes at -78.5°C. Has it ever snowed dry ice on Earth?
-Author: Telvin3d
-Score: 104
-Vote Ratio: 0.96
-Comment Count: 47
-Subreddit: askscience
-PostTime: 1705120934
-URL: https://www.reddit.com/r/askscience/comments/195fqvz/the_coldest_recorded_temperature_on_earth_was/
-Text: I’m curious if conditions here on Earth have ever resulted in dry ice precipitation. And what that would look like, and the results once it warmed up again.
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 710, in _error_catcher
+    yield
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 835, in _raw_read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+urllib3.exceptions.IncompleteRead: IncompleteRead(44977 bytes read, 768378 more expected)
 
-Title: If warming happened and caused all ice to melt, would cooling cause the ice to return?
-Author: lostn
-Score: 219
-Vote Ratio: 0.78
-Comment Count: 71
-Subreddit: askscience
-PostTime: 1705132687
-URL: https://www.reddit.com/r/askscience/comments/195ize1/if_warming_happened_and_caused_all_ice_to_melt/
-Text: This is going to sound like a dumb question, and I know there's a subreddit for NoStupidQuestions but I looked there and the answerers are not scientifically inclined. 
+The above exception was the direct cause of the following exception:
 
-If enough warming happened to melt all ice in the oceans, including all of Antarctica, suppose the warming was reversed back to the current climate, would all that ice reform again? If so, what shape would it take? Where would it be? Would Antarctica restore its former shape and structure? 
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 936, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 907, in read
+    data = self._raw_read(amt)
+           ^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 813, in _raw_read
+    with self._error_catcher():
+  File &quot;/usr/lib/python3.12/contextlib.py&quot;, line 158, in __exit__
+    self.gen.throw(value)
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 727, in _error_catcher
+    raise ProtocolError(f&quot;Connection broken: {e!r}&quot;, e) from e
+urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(44977 bytes read, 768378 more expected)', IncompleteRead(44977 bytes read, 768378 more expected))
 
-Or is melting ice a one way street? If that's the case, what if the climate got cooler than it is now, cool enough that ice has to form again? What would the shape of that new ice look like, and where would it go? 
+During handling of the above exception, another exception occurred:
 
-Title: What would happen to life at the bottom of the Mariana Trench if it started to rise(swim) up to the surface, how far would they be able to make it before things like pressure or temperature started to take its toll?
-Author: wanderingearth90
-Score: 25
-Vote Ratio: 0.86
-Comment Count: 11
-Subreddit: askscience
-PostTime: 1705168906
-URL: https://www.reddit.com/r/askscience/comments/195tx44/what_would_happen_to_life_at_the_bottom_of_the/
-Text: 
-
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/reddit.py&quot;, line 49, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/reddit.py&quot;, line 31, in main
+    reddit_obj = data_source.reddit_data(&quot;askscience&quot;)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 1281, in reddit_data
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 940, in _server_request
+  File &quot;/usr/lib/python3/dist-packages/requests/api.py&quot;, line 73, in get
+    return request(&quot;get&quot;, url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/api.py&quot;, line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/sessions.py&quot;, line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/sessions.py&quot;, line 747, in send
+    r.content
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 899, in content
+    self._content = b&quot;&quot;.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b&quot;&quot;
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 818, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ('Connection broken: IncompleteRead(44977 bytes read, 768378 more expected)', IncompleteRead(44977 bytes read, 768378 more expected))
+could not run test reddit.py
 </code></pre>
 </div>
     
@@ -2551,7 +2549,7 @@ Text:
     <div id="pythonlogreddit_snippet.py" class="logdetails">
       <h2>Test reddit_snippet.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogreddit_snippet.py-runtest">Run Test for test reddit_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -2581,40 +2579,60 @@ Text:
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: The coldest recorded temperature on Earth was −89.2°C in Antarctica. CO2 freezes at -78.5°C. Has it ever snowed dry ice on Earth?
-Author: Telvin3d
-Score: 104
-Vote Ratio: 0.96
-Comment Count: 47
-Subreddit: askscience
-PostTime: 1705120934
-URL: https://www.reddit.com/r/askscience/comments/195fqvz/the_coldest_recorded_temperature_on_earth_was/
-Text: I’m curious if conditions here on Earth have ever resulted in dry ice precipitation. And what that would look like, and the results once it warmed up again.
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 710, in _error_catcher
+    yield
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 835, in _raw_read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+urllib3.exceptions.IncompleteRead: IncompleteRead(44977 bytes read, 768378 more expected)
 
-Title: If warming happened and caused all ice to melt, would cooling cause the ice to return?
-Author: lostn
-Score: 219
-Vote Ratio: 0.78
-Comment Count: 71
-Subreddit: askscience
-PostTime: 1705132687
-URL: https://www.reddit.com/r/askscience/comments/195ize1/if_warming_happened_and_caused_all_ice_to_melt/
-Text: This is going to sound like a dumb question, and I know there's a subreddit for NoStupidQuestions but I looked there and the answerers are not scientifically inclined. 
+The above exception was the direct cause of the following exception:
 
-If enough warming happened to melt all ice in the oceans, including all of Antarctica, suppose the warming was reversed back to the current climate, would all that ice reform again? If so, what shape would it take? Where would it be? Would Antarctica restore its former shape and structure? 
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 936, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 907, in read
+    data = self._raw_read(amt)
+           ^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 813, in _raw_read
+    with self._error_catcher():
+  File &quot;/usr/lib/python3.12/contextlib.py&quot;, line 158, in __exit__
+    self.gen.throw(value)
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 727, in _error_catcher
+    raise ProtocolError(f&quot;Connection broken: {e!r}&quot;, e) from e
+urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(44977 bytes read, 768378 more expected)', IncompleteRead(44977 bytes read, 768378 more expected))
 
-Or is melting ice a one way street? If that's the case, what if the climate got cooler than it is now, cool enough that ice has to form again? What would the shape of that new ice look like, and where would it go? 
+During handling of the above exception, another exception occurred:
 
-Title: What would happen to life at the bottom of the Mariana Trench if it started to rise(swim) up to the surface, how far would they be able to make it before things like pressure or temperature started to take its toll?
-Author: wanderingearth90
-Score: 25
-Vote Ratio: 0.86
-Comment Count: 11
-Subreddit: askscience
-PostTime: 1705168906
-URL: https://www.reddit.com/r/askscience/comments/195tx44/what_would_happen_to_life_at_the_bottom_of_the/
-Text: 
-
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/reddit_snippet.py&quot;, line 32, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/reddit_snippet.py&quot;, line 16, in main
+    reddit_obj = data_source.reddit_data(&quot;askscience&quot;)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 1281, in reddit_data
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 940, in _server_request
+  File &quot;/usr/lib/python3/dist-packages/requests/api.py&quot;, line 73, in get
+    return request(&quot;get&quot;, url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/api.py&quot;, line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/sessions.py&quot;, line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/sessions.py&quot;, line 747, in send
+    r.content
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 899, in content
+    self._content = b&quot;&quot;.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b&quot;&quot;
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 818, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ('Connection broken: IncompleteRead(44977 bytes read, 768378 more expected)', IncompleteRead(44977 bytes read, 768378 more expected))
+could not run test reddit_snippet.py
 </code></pre>
 </div>
     
@@ -2652,10 +2670,11 @@ Text:
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Sonnet 58
+Sonnet 125
 poem
-That god forbid, that made me first your slave,
- I should in thought control your times of pleasure,
+Were't aught to me I bore the canopy,
+ With my extern the outward honouring,
+ Or laid great bases fo
 </code></pre>
 </div>
     
@@ -4364,16 +4383,16 @@ Data Records in 1955: 4617
 First 3 records:
 
 0)Actor-Movie Data:
-	Movie: Q237116, Marty
-	Actor: Q102551, Ernest Borgnine
+	Movie: Q34414, Rear Window
+	Actor: Q3925, Grace Kelly
 
 1)Actor-Movie Data:
-	Movie: Q237116, Marty
-	Actor: Q180251, Paddy Chayefsky
+	Movie: Q34414, Rear Window
+	Actor: Q7374, Alfred Hitchcock
 
 2)Actor-Movie Data:
-	Movie: Q237116, Marty
-	Actor: Q266416, Betsy Blair
+	Movie: Q34414, Rear Window
+	Actor: Q102462, James Stewart
 
 </code></pre>
 </div>

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Sep 30 09:30:53 PM EDT 2024</p>
+	<p>Running at Tue Oct  1 01:27:03 AM EDT 2024</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -102,13 +102,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary9" class="success">
+  <div id="summary9" class="failure">
     <h2><a href="java_logs.html#javalog9">Assignment 9</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog9-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog9-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog9-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog9-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -242,13 +242,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary23" class="success">
+  <div id="summary23" class="failure">
     <h2><a href="java_logs.html#javalog23">Assignment 23</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog23-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog23-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog23-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog23-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -442,13 +442,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary43" class="success">
+  <div id="summary43" class="failure">
     <h2><a href="java_logs.html#javalog43">Assignment 43</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog43-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog43-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog43-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog43-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -662,13 +662,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary65" class="success">
+  <div id="summary65" class="failure">
     <h2><a href="java_logs.html#javalog65">Assignment 65</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog65-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog65-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog65-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog65-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1081,22 +1081,16 @@ http://bridges-cs.herokuapp.com/assignments/8/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/9-ShortestPathOSM/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog9-runanswer">Run Answer for Assignment 9</h3>
 <pre><code>Guessing osm.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/9/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/9/bridges_testing
-
-
+Exception in thread &quot;main&quot; com.google.gson.JsonParseException: Malformed JSON: Unable to Parse
+	at bridges.connect.DataSource.parseOSMData(DataSource.java:902)
+	at bridges.connect.DataSource.getOsmDataDS(DataSource.java:843)
+	at bridges.connect.DataSource.getOsmData(DataSource.java:495)
+	at osm.main(osm.java:291)
+could not run java_answer for assignment in ../assignmentdb/9-ShortestPathOSM/java_answer
 </code></pre>
 </div>
     
@@ -1491,16 +1485,15 @@ Shutting down ...
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/23-MountainPaths/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog23-runanswer">Run Answer for Assignment 23</h3>
 <pre><code>Guessing mount_path.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/23/bridges_testing
-
-
+Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: Http Request Failed. Error Code:500. Message:null
+	at bridges.connect.DataSource.getDataSetJSON(DataSource.java:1092)
+	at bridges.connect.DataSource.getElevationData(DataSource.java:1161)
+	at mount_path.main(mount_path.java:24)
+could not run java_answer for assignment in ../assignmentdb/23-MountainPaths/java_answer
 </code></pre>
 </div>
     
@@ -1892,7 +1885,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.726019353685621E12
+Data Access Took: 1.726033494651374E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2183,6 +2176,86 @@ http://bridges-cs.herokuapp.com/assignments/38/bridges_testing
 <pre><code>Guessing BookDistance.java is the right java file where main is
 
 80
+ERROR: Failed to get book with id = 102
+ERROR: Failed to get book with id = 1044
+ERROR: Failed to get book with id = 1086
+ERROR: Failed to get book with id = 11622
+ERROR: Failed to get book with id = 119
+ERROR: Failed to get book with id = 1213
+ERROR: Failed to get book with id = 142
+ERROR: Failed to get book with id = 17945
+ERROR: Failed to get book with id = 1837
+ERROR: Failed to get book with id = 18381
+ERROR: Failed to get book with id = 1892
+ERROR: Failed to get book with id = 19484
+ERROR: Failed to get book with id = 19987
+ERROR: Failed to get book with id = 20943
+ERROR: Failed to get book with id = 2431
+ERROR: Failed to get book with id = 245
+ERROR: Failed to get book with id = 2572
+ERROR: Failed to get book with id = 2874
+ERROR: Failed to get book with id = 2875
+ERROR: Failed to get book with id = 28803
+ERROR: Failed to get book with id = 100
+ERROR: Failed to get book with id = 1041
+ERROR: Failed to get book with id = 1045
+ERROR: Failed to get book with id = 10606
+ERROR: Failed to get book with id = 1100
+ERROR: Failed to get book with id = 1101
+ERROR: Failed to get book with id = 1102
+ERROR: Failed to get book with id = 1103
+ERROR: Failed to get book with id = 1104
+ERROR: Failed to get book with id = 1105
+ERROR: Failed to get book with id = 1106
+ERROR: Failed to get book with id = 1107
+ERROR: Failed to get book with id = 1108
+ERROR: Failed to get book with id = 1109
+ERROR: Failed to get book with id = 1110
+ERROR: Failed to get book with id = 1111
+ERROR: Failed to get book with id = 1112
+ERROR: Failed to get book with id = 1113
+ERROR: Failed to get book with id = 1114
+ERROR: Failed to get book with id = 1115
+ERROR: Failed to get book with id = 1023
+ERROR: Failed to get book with id = 1289
+ERROR: Failed to get book with id = 13771
+ERROR: Failed to get book with id = 1392
+ERROR: Failed to get book with id = 1394
+ERROR: Failed to get book with id = 1400
+ERROR: Failed to get book with id = 1406
+ERROR: Failed to get book with id = 1407
+ERROR: Failed to get book with id = 1413
+ERROR: Failed to get book with id = 1414
+ERROR: Failed to get book with id = 1415
+ERROR: Failed to get book with id = 1416
+ERROR: Failed to get book with id = 1419
+ERROR: Failed to get book with id = 1421
+ERROR: Failed to get book with id = 1422
+ERROR: Failed to get book with id = 1423
+ERROR: Failed to get book with id = 1435
+ERROR: Failed to get book with id = 1465
+ERROR: Failed to get book with id = 1467
+ERROR: Failed to get book with id = 14789
+ERROR: Failed to get book with id = 10449
+ERROR: Failed to get book with id = 12864
+ERROR: Failed to get book with id = 13725
+ERROR: Failed to get book with id = 13910
+ERROR: Failed to get book with id = 14285
+ERROR: Failed to get book with id = 14286
+ERROR: Failed to get book with id = 16452
+ERROR: Failed to get book with id = 16990
+ERROR: Failed to get book with id = 1727
+ERROR: Failed to get book with id = 1728
+ERROR: Failed to get book with id = 21671
+ERROR: Failed to get book with id = 2199
+ERROR: Failed to get book with id = 22382
+ERROR: Failed to get book with id = 24269
+ERROR: Failed to get book with id = 24385
+ERROR: Failed to get book with id = 24856
+ERROR: Failed to get book with id = 25188
+ERROR: Failed to get book with id = 28815
+ERROR: Failed to get book with id = 3059
+ERROR: Failed to get book with id = 30613
 
 Check Your Visualization at the following link:
 
@@ -2364,43 +2437,16 @@ http://bridges-cs.herokuapp.com/assignments/42/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/43-SpatialIndexing/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog43-runanswer">Run Answer for Assignment 43</h3>
 <pre><code>Guessing closestPoint.java is the right java file where main is
 
-total vertices:12648
-Set size: 12648
-Grid
-===grid stats===
-0)Source Point:-23.35761020481629,-20.79625838431246
-0)[ALG]Closest Point: -73.917196,40.616092
-0)[ALG]Min Dist:79.54714636934568
-0)[BFA]Closest Point: -73.917196,40.616092
-0)[BFA]Min Dist:79.54714636934568
-0)Difference:0.0
-Source Point:-41.62817950744625,40.71376211218979
-Source Point:-14.826996253605927,40.75444293061124
-Source Point:-62.3911974821471,40.782424496562754
-Source Point:-46.84044160934543,40.71220962259138
-Source Point:-28.640909314776486,40.734541720807485
-Source Point:-38.502081030440934,40.72911556029198
-Source Point:-15.917724460867568,40.724551179560784
-Source Point:-53.162281215945754,40.64145505483491
-Source Point:-70.41733640579352,40.72512775133669
-Source Point:-52.47526996325132,40.72857460353439
-num cells examined:11
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/43/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/43/bridges_testing
-
-
+Exception in thread &quot;main&quot; com.google.gson.JsonParseException: Malformed JSON: Unable to Parse
+	at bridges.connect.DataSource.parseOSMData(DataSource.java:902)
+	at bridges.connect.DataSource.getOsmDataDS(DataSource.java:843)
+	at bridges.connect.DataSource.getOsmData(DataSource.java:495)
+	at closestPoint.main(closestPoint.java:25)
+could not run java_answer for assignment in ../assignmentdb/43-SpatialIndexing/java_answer
 </code></pre>
 </div>
     
@@ -2731,6 +2777,86 @@ http://bridges-cs.herokuapp.com/assignments/56/bridges_testing
 <pre><code>Guessing book_analysis.java is the right java file where main is
 
 80
+ERROR: Failed to get book with id = 102
+ERROR: Failed to get book with id = 1044
+ERROR: Failed to get book with id = 1086
+ERROR: Failed to get book with id = 11622
+ERROR: Failed to get book with id = 119
+ERROR: Failed to get book with id = 1213
+ERROR: Failed to get book with id = 142
+ERROR: Failed to get book with id = 17945
+ERROR: Failed to get book with id = 1837
+ERROR: Failed to get book with id = 18381
+ERROR: Failed to get book with id = 1892
+ERROR: Failed to get book with id = 19484
+ERROR: Failed to get book with id = 19987
+ERROR: Failed to get book with id = 20943
+ERROR: Failed to get book with id = 2431
+ERROR: Failed to get book with id = 245
+ERROR: Failed to get book with id = 2572
+ERROR: Failed to get book with id = 2874
+ERROR: Failed to get book with id = 2875
+ERROR: Failed to get book with id = 28803
+ERROR: Failed to get book with id = 100
+ERROR: Failed to get book with id = 1041
+ERROR: Failed to get book with id = 1045
+ERROR: Failed to get book with id = 10606
+ERROR: Failed to get book with id = 1100
+ERROR: Failed to get book with id = 1101
+ERROR: Failed to get book with id = 1102
+ERROR: Failed to get book with id = 1103
+ERROR: Failed to get book with id = 1104
+ERROR: Failed to get book with id = 1105
+ERROR: Failed to get book with id = 1106
+ERROR: Failed to get book with id = 1107
+ERROR: Failed to get book with id = 1108
+ERROR: Failed to get book with id = 1109
+ERROR: Failed to get book with id = 1110
+ERROR: Failed to get book with id = 1111
+ERROR: Failed to get book with id = 1112
+ERROR: Failed to get book with id = 1113
+ERROR: Failed to get book with id = 1114
+ERROR: Failed to get book with id = 1115
+ERROR: Failed to get book with id = 1023
+ERROR: Failed to get book with id = 1289
+ERROR: Failed to get book with id = 13771
+ERROR: Failed to get book with id = 1392
+ERROR: Failed to get book with id = 1394
+ERROR: Failed to get book with id = 1400
+ERROR: Failed to get book with id = 1406
+ERROR: Failed to get book with id = 1407
+ERROR: Failed to get book with id = 1413
+ERROR: Failed to get book with id = 1414
+ERROR: Failed to get book with id = 1415
+ERROR: Failed to get book with id = 1416
+ERROR: Failed to get book with id = 1419
+ERROR: Failed to get book with id = 1421
+ERROR: Failed to get book with id = 1422
+ERROR: Failed to get book with id = 1423
+ERROR: Failed to get book with id = 1435
+ERROR: Failed to get book with id = 1465
+ERROR: Failed to get book with id = 1467
+ERROR: Failed to get book with id = 14789
+ERROR: Failed to get book with id = 10449
+ERROR: Failed to get book with id = 12864
+ERROR: Failed to get book with id = 13725
+ERROR: Failed to get book with id = 13910
+ERROR: Failed to get book with id = 14285
+ERROR: Failed to get book with id = 14286
+ERROR: Failed to get book with id = 16452
+ERROR: Failed to get book with id = 16990
+ERROR: Failed to get book with id = 1727
+ERROR: Failed to get book with id = 1728
+ERROR: Failed to get book with id = 21671
+ERROR: Failed to get book with id = 2199
+ERROR: Failed to get book with id = 22382
+ERROR: Failed to get book with id = 24269
+ERROR: Failed to get book with id = 24385
+ERROR: Failed to get book with id = 24856
+ERROR: Failed to get book with id = 25188
+ERROR: Failed to get book with id = 28815
+ERROR: Failed to get book with id = 3059
+ERROR: Failed to get book with id = 30613
 
 Check Your Visualization at the following link:
 
@@ -2982,16 +3108,26 @@ http://bridges-cs.herokuapp.com/assignments/64/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/65-Reddit/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog65-runanswer">Run Answer for Assignment 65</h3>
 <pre><code>Guessing reddit.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/65/bridges_testing
-
-
+Exception in thread &quot;main&quot; org.apache.http.ConnectionClosedException: Premature end of Content-Length delimited message body (expected: 227773; received: 70969
+	at org.apache.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:180)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:281)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:324)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:189)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
+	at java.base/java.io.Reader.read(Reader.java:250)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:244)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:288)
+	at bridges.connect.DataSource.requestJSON(DataSource.java:1219)
+	at bridges.connect.DataSource.getRedditData(DataSource.java:1488)
+	at bridges.connect.DataSource.getRedditData(DataSource.java:1463)
+	at reddit.generateLinePlot(reddit.java:32)
+	at reddit.main(reddit.java:49)
+could not run java_answer for assignment in ../assignmentdb/65-Reddit/java_answer
 </code></pre>
 </div>
     
@@ -3154,7 +3290,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13132
+Pi val: 3.1404
 
 Check Your Visualization at the following link:
 
