@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for C++</h1>
-	<p>Running at Sat Oct  5 08:53:26 PM EDT 2024</p>
+	<p>Running at Sun Oct  6 12:53:26 AM EDT 2024</p>
   <div id="summary3d_game_test.cpp" class="failure">
     <h2><a href="cxx_testing_logs.html#cxxlog3d_game_test.cpp">Test 3d_game_test.cpp</a> </h2>
     <p>
@@ -6011,15 +6011,56 @@ In file included from /home/bridges-testing/bridges-cxx-install/include/Bridges.
 /home/bridges-testing/bridges-cxx-install/include/Bridges.h:415:53: error: request for member ‘getMapDataJSON’ in ‘ds’, which is of non-class type ‘int’
   415 |                                 string map_str = ds.getMapDataJSON(state_data);
       |                                                     ^~~~~~~~~~~~~~
-us_map_test.cpp: In function ‘int main(int, char**)’:
-us_map_test.cpp:37:34: error: cannot convert ‘bridges::DataSource’ to ‘int&amp;’
-   37 |         bridges.setMap(map_data, ds);
-      |                                  ^~
-      |                                  |
-      |                                  bridges::DataSource
-/home/bridges-testing/bridges-cxx-install/include/Bridges.h:412:84: note:   initializing argument 2 of ‘void bridges::Bridges::setMap(std::vector&lt;bridges::dataset::State&gt;, int&amp;)’
-  412 |                         void setMap(vector&lt;dataset::State&gt; state_data, Datasource&amp; ds) {
-      |                                                                        ~~~~~~~~~~~~^~
+In file included from us_map_test.cpp:9:
+/home/bridges-testing/bridges-cxx-install/include/USMaps.h: In member function ‘virtual const std::string bridges::datastructure::USMaps::getDataStructureRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/USMaps.h:42:94: error: passing ‘const bridges::dataset::State’ as ‘this’ argument discards qualifiers [-fpermissive]
+   42 |                                         map_str += &quot;_state_name&quot; + JSONencode(st.getStateName()) +
+      |                                                                               ~~~~~~~~~~~~~~~^~
+In file included from /home/bridges-testing/bridges-cxx-install/include/DataSource.h:27:
+/home/bridges-testing/bridges-cxx-install/include/./data_src/State.h:37:40: note:   in call to ‘std::string bridges::dataset::State::getStateName()’
+   37 |                                 string getStateName() {
+      |                                        ^~~~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/USMaps.h:43:95: error: passing ‘const bridges::dataset::State’ as ‘this’ argument discards qualifiers [-fpermissive]
+   43 |                                                 &quot;_stroke_color&quot; + JSONencode(st.getStrokeColor()) +
+      |                                                                              ~~~~~~~~~~~~~~~~~^~
+/home/bridges-testing/bridges-cxx-install/include/./data_src/State.h:40:40: note:   in call to ‘std::string bridges::dataset::State::getStrokeColor()’
+   40 |                                 string getStrokeColor() {
+      |                                        ^~~~~~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/USMaps.h:44:95: error: passing ‘const bridges::dataset::State’ as ‘this’ argument discards qualifiers [-fpermissive]
+   44 |                                                 &quot;_stroke_width&quot; + JSONencode(st.getStrokeWidth()) +
+      |                                                                              ~~~~~~~~~~~~~~~~~^~
+/home/bridges-testing/bridges-cxx-install/include/./data_src/State.h:46:39: note:   in call to ‘float bridges::dataset::State::getStrokeWidth()’
+   46 |                                 float getStrokeWidth() {
+      |                                       ^~~~~~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/USMaps.h:45:91: error: passing ‘const bridges::dataset::State’ as ‘this’ argument discards qualifiers [-fpermissive]
+   45 |                                                 &quot;_fill_color&quot; + JSONencode(st.getFillColor()) +
+      |                                                                            ~~~~~~~~~~~~~~~^~
+/home/bridges-testing/bridges-cxx-install/include/./data_src/State.h:43:40: note:   in call to ‘std::string bridges::dataset::State::getFillColor()’
+   43 |                                 string getFillColor() {
+      |                                        ^~~~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/USMaps.h:46:101: error: passing ‘const bridges::dataset::State’ as ‘this’ argument discards qualifiers [-fpermissive]
+   46 |                                                 &quot;_view_counties&quot; + JSONencode(st.getViewCountiesFlag()) +
+      |                                                                               ~~~~~~~~~~~~~~~~~~~~~~^~
+/home/bridges-testing/bridges-cxx-install/include/./data_src/State.h:49:38: note:   in call to ‘bool bridges::dataset::State::getViewCountiesFlag()’
+   49 |                                 bool getViewCountiesFlag() {
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/USMaps.h:49:78: error: passing ‘const bridges::dataset::State’ as ‘this’ argument discards qualifiers [-fpermissive]
+   49 |                                                 for (auto&amp; c : st.getCounties()) {
+      |                                                                ~~~~~~~~~~~~~~^~
+/home/bridges-testing/bridges-cxx-install/include/./data_src/State.h:30:60: note:   in call to ‘std::unordered_map&lt;int, bridges::dataset::County&gt; bridges::dataset::State::getCounties()’
+   30 |                                 unordered_map&lt;int, County&gt; getCounties() {
+      |                                                            ^~~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/USMaps.h: In member function ‘std::vector&lt;bridges::dataset::State&gt; bridges::datastructure::USMaps::setMap(std::vector&lt;bridges::dataset::State&gt;)’:
+/home/bridges-testing/bridges-cxx-install/include/USMaps.h:80:25: warning: no return statement in function returning non-void [-Wreturn-type]
+   80 |                         }
+      |                         ^
+us_map_test.cpp: At global scope:
+us_map_test.cpp:56:2: error: expected ‘}’ at end of input
+   56 | }
+      |  ^
+/home/bridges-testing/bridges-cxx-install/include/USMaps.h:26:19: note: to match this ‘{’
+   26 | namespace bridges {
+      |                   ^
 In file included from /usr/include/c++/13/bits/hashtable_policy.h:34,
                  from /usr/include/c++/13/bits/hashtable.h:35,
                  from /usr/include/c++/13/bits/unordered_map.h:33,
@@ -6037,8 +6078,7 @@ In file included from /usr/include/c++/13/bits/hashtable_policy.h:34,
 /usr/include/c++/13/tuple:2268:9: error: no matching function for call to ‘bridges::dataset::County::County()’
  2268 |         second(std::forward&lt;_Args2&gt;(std::get&lt;_Indexes2&gt;(__tuple2))...)
       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from /home/bridges-testing/bridges-cxx-install/include/./data_src/State.h:4,
-                 from /home/bridges-testing/bridges-cxx-install/include/DataSource.h:27:
+In file included from /home/bridges-testing/bridges-cxx-install/include/./data_src/State.h:4:
 /home/bridges-testing/bridges-cxx-install/include/./data_src/County.h:25:33: note: candidate: ‘bridges::dataset::County::County(int, int, std::string, std::string)’
    25 |                                 County (int id, int code, string county, string state) {
       |                                 ^~~~~~
