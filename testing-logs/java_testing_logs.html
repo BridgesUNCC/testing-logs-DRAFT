@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Oct  7 04:56:26 AM EDT 2024</p>
+	<p>Running at Mon Oct  7 08:56:25 AM EDT 2024</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -696,12 +696,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1181,10 +1181,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.8
-	Date:Oct 07 2024  08:37:50.011 UTC
-	Location: 39 km NNE of Chenega, Alaska
-	Lat/Long:60.396,-147.7409
+	Magnitude:1.6
+	Date:Oct 07 2024  12:49:45.803 UTC
+	Location: 41 km SSE of Denali National Park, Alaska
+	Lat/Long:63.1867,-151.4921
 </code></pre>
 </div>
     
@@ -1241,10 +1241,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Frogger
-Windows Phone
-5.5
-[Action]
+<pre><code>Soulcalibur
+Dreamcast
+10.0
+[Fighting]
 </code></pre>
 </div>
     
@@ -1517,8 +1517,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Bill_Murray_(I)
-Meatballs_(1979)
+<pre><code>Billy_Crystal
+Animalympics_(1980)
 </code></pre>
 </div>
     
@@ -2231,11 +2231,11 @@ Life - some believe life was brought here by meteorites &amp; asteroids
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 104
+<pre><code>Sonnet 41
 poem
-To me fair friend you never can be old,
- For as you were when first your eye I eyed,
- Such seems you...
+Those pretty wrongs that liberty commits,
+ When I am sometime absent from thy heart,
+ Thy beauty, an...
 </code></pre>
 </div>
     
@@ -3138,22 +3138,13 @@ http://bridges-cs.herokuapp.com/assignments/2075/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 4617
-
-Actor-Movie Data:
-	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
-	Actor: Q93957 &quot;Gary Cooper&quot;
-
-Actor-Movie Data:
-	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
-	Actor: Q156532 &quot;Peter Graves&quot;
-
-Actor-Movie Data:
-	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
-	Actor: Q233843 &quot;Elizabeth Montgomery&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1446)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1374)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     
