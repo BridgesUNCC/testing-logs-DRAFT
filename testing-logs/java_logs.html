@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Oct 10 05:31:09 AM EDT 2024</p>
+	<p>Running at Thu Oct 10 09:28:59 AM EDT 2024</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -402,23 +402,23 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary39" class="success">
+  <div id="summary39" class="failure">
     <h2><a href="java_logs.html#javalog39">Assignment 39</a> </h2>
     <p>
       <ul>
-        <li> Build Scaffold : <a href="java_logs.html#javalog39-buildscaffold">success</a></li>
-        <li> Build Answer : <a href="java_logs.html#javalog39-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog39-runanswer">success</a></li>
+        <li> Build Scaffold : <a href="java_logs.html#javalog39-buildscaffold">error</a></li>
+        <li> Build Answer : <a href="java_logs.html#javalog39-buildanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog39-runanswer">error</a></li>
       </ul>
     </p>
   </div>
-  <div id="summary40" class="success">
+  <div id="summary40" class="failure">
     <h2><a href="java_logs.html#javalog40">Assignment 40</a> </h2>
     <p>
       <ul>
-        <li> Build Scaffold : <a href="java_logs.html#javalog40-buildscaffold">success</a></li>
-        <li> Build Answer : <a href="java_logs.html#javalog40-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog40-runanswer">success</a></li>
+        <li> Build Scaffold : <a href="java_logs.html#javalog40-buildscaffold">error</a></li>
+        <li> Build Answer : <a href="java_logs.html#javalog40-buildanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog40-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1982,7 +1982,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.726825018170095E12
+Data Access Took: 1.726839220112133E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2258,45 +2258,37 @@ http://bridges-cs.herokuapp.com/assignments/38/bridges_testing
     <div id="javalog39" class="logdetails">
       <h2>Assignment 39 full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="javalog39-buildscaffold">Build Scaffold for Assignment 39</h3>
 <pre><code>Compiling java/ for assignment in ../assignmentdb/39-BookDistance/java
+BookDistance.java:74: error: cannot find symbol
+	bridges.detDescription(&quot;Implement a word frequency list for a book and use it to compare similarity to other books.&quot;);
+	       ^
+  symbol:   method detDescription(String)
+  location: variable bridges of type Bridges
+1 error
+could not compile java/ for assignment in ../assignmentdb/39-BookDistance/java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog39-buildanswer">Build Answer for Assignment 39</h3>
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/39-BookDistance/java_answer
+BookDistance.java:110: error: cannot find symbol
+	bridges.detDescription(&quot;Implement a word frequency list for a book and use it to compare similarity to other books.&quot;);
+	       ^
+  symbol:   method detDescription(String)
+  location: variable bridges of type Bridges
+1 error
+could not compile java_answer/ for assignment in ../assignmentdb/39-BookDistance/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog39-runanswer">Run Answer for Assignment 39</h3>
 <pre><code>Guessing BookDistance.java is the right java file where main is
 
-80
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/139/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/139/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/139/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/139/bridges_testing
-
-
+Error: Could not find or load main class BookDistance
+Caused by: java.lang.ClassNotFoundException: BookDistance
+could not run java_answer for assignment in ../assignmentdb/39-BookDistance/java_answer
 </code></pre>
 </div>
     
@@ -2304,57 +2296,33 @@ http://bridges-cs.herokuapp.com/assignments/139/bridges_testing
     <div id="javalog40" class="logdetails">
       <h2>Assignment 40 full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="javalog40-buildscaffold">Build Scaffold for Assignment 40</h3>
 <pre><code>Compiling java/ for assignment in ../assignmentdb/40-ImageProcessing/java
+ImageProcessing.java:18: error: unclosed string literal
+	        bridges.setTitle(&quot;Image Processing);
+	                         ^
+1 error
+could not compile java/ for assignment in ../assignmentdb/40-ImageProcessing/java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog40-buildanswer">Build Answer for Assignment 40</h3>
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/40-ImageProcessing/java_answer
+ImageProcess.java:20: error: unclosed string literal
+		bridges.setTitle(&quot;Image Processing);
+		                 ^
+1 error
+could not compile java_answer/ for assignment in ../assignmentdb/40-ImageProcessing/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog40-runanswer">Run Answer for Assignment 40</h3>
 <pre><code>Guessing ImageProcess.java is the right java file where main is
 
-Header:P3 1038 807 255
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/40/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/40/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/40/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/40/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/40/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/40/bridges_testing
-
-
+Error: Could not find or load main class ImageProcess
+Caused by: java.lang.ClassNotFoundException: ImageProcess
+could not run java_answer for assignment in ../assignmentdb/40-ImageProcessing/java_answer
 </code></pre>
 </div>
     
@@ -2462,23 +2430,23 @@ total vertices:12648
 Set size: 12648
 Grid
 ===grid stats===
-0)Source Point:-15.118300847879581,-2.6870776879159735
+0)Source Point:-0.3292850533622129,-32.81974206546469
 0)[ALG]Closest Point: -73.917196,40.616092
-0)[ALG]Min Dist:73.02379458868523
+0)[ALG]Min Dist:103.96154270873801
 0)[BFA]Closest Point: -73.917196,40.616092
-0)[BFA]Min Dist:73.02379458868523
+0)[BFA]Min Dist:103.96154270873801
 0)Difference:0.0
-Source Point:-33.37113804497629,40.6480549911152
-Source Point:-33.074987206667316,40.770648337250634
-Source Point:-59.34468523377561,40.69150730363467
-Source Point:-71.81706915764875,40.72067422150261
-Source Point:-31.963668339053342,40.78827255519232
-Source Point:-39.47177079185006,40.721429683866
-Source Point:-67.369748857776,40.78585911722862
-Source Point:-5.491870649139017,40.692231201942406
-Source Point:-1.8259439639774655,40.77558843276516
-Source Point:-46.83657784233651,40.77361006424491
-num cells examined:12
+Source Point:-34.81587429431018,40.700692097562346
+Source Point:-54.88532732308905,40.641296276864594
+Source Point:-58.241091236526415,40.62512182563235
+Source Point:-68.73217045558108,40.62287762158222
+Source Point:-24.98804510031519,40.79544840005084
+Source Point:-12.67200586964654,40.6916769031259
+Source Point:-47.133729531058805,40.80287971739195
+Source Point:-14.795842660155202,40.78123334938525
+Source Point:-19.181434097988827,40.75817842090027
+Source Point:-17.829829127472735,40.62912853059732
+num cells examined:6
 
 Check Your Visualization at the following link:
 
@@ -3250,7 +3218,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13796
+Pi val: 3.14544
 
 Check Your Visualization at the following link:
 
